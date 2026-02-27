@@ -14,7 +14,7 @@ Als Kind programmierte ich auf einem Commodore in Basic und Pascal.
 | | |
 |---|---|
 | 📚 **Lerne gerade** | Python · SQL · Java |
-| 💾 **Früher gemacht** | Pascal (Torpedo-Spiel) · Excel VBA |
+| 💾 **Früher gemacht** | Pascal (Torpedo-Spiel) · Excel Macro |
 | 🌍 **Sprachen** | 🇭🇺 Ungarisch (Muttersprache) · 🇩🇪 Deutsch (C1) · 🇬🇧 Englisch (B1/B2) |
 | 📧 **Kontakt** | cegledi.beata@gmail.com |
 
@@ -28,7 +28,7 @@ As a kid, I programmed on a Commodore in Basic and Pascal.
 | | |
 |---|---|
 | 📚 **Learning now** | Python · SQL · Java |
-| 💾 **Did before** | Pascal (Battleship game) · Excel VBA |
+| 💾 **Did before** | Pascal (Battleship game) · Excel Macro |
 | 🌍 **Languages** | 🇭🇺 Hungarian (native) · 🇩🇪 German (C1) · 🇬🇧 English (B1/B2) |
 | 📧 **Contact** | cegledi.beata@gmail.com |
 
@@ -42,7 +42,7 @@ Gyerekkoromban Commodore-n programoztam Basic és Pascal nyelven.
 | | |
 |---|---|
 | 📚 **Most tanulom** | Python · SQL · Java |
-| 💾 **Régen csináltam** | Pascal (Torpedo játék) · Excel VBA |
+| 💾 **Régen csináltam** | Pascal (Torpedo játék) · Excel Macro |
 | 🌍 **Nyelvek** | 🇭🇺 Magyar (anyanyelv) · 🇩🇪 Német (C1) · 🇬🇧 Angol (B1/B2) |
 | 📧 **Kapcsolat** | cegledi.beata@gmail.com |
 
