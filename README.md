@@ -1,73 +1,73 @@
 <div align="center">
 
-# 👋 Hallo, ich bin Beata! | Hi, I'm Beata! | Szia, Beata vagyok!
+#  Hallo, ich bin Beata! | Hi, I'm Beata! | Szia, Beata vagyok!
 
 </div>
 
 ---
 
-## 🇩🇪 Deutsch
+##  Deutsch
 
 Als Kind programmierte ich auf einem Commodore in Basic und Pascal.
-20 Jahre und 4 Kinder später verwirkliche ich meinen Traum: **Fachinformatikerin**! 🚀
+20 Jahre und 4 Kinder spter verwirkliche ich meinen Traum: **Fachinformatikerin**! 
 
 | | |
 |---|---|
-| 📚 **Lerne gerade** | Python · SQL · Java · Swing GUI |
-| 💾 **Früher gemacht** | Pascal (Torpedo-Spiel) · Excel Macro |
-| 🌍 **Sprachen** | 🇭🇺 Ungarisch (Muttersprache) · 🇩🇪 Deutsch (C1) · 🇬🇧 Englisch (B1/B2) |
-| 📧 **Kontakt** | cegledi.beata@gmail.com |
+|  **Lerne gerade** | Python  SQL  Java  Swing GUI |
+|  **Frher gemacht** | Pascal (Torpedo-Spiel)  Excel Macro |
+|  **Sprachen** |  Ungarisch (Muttersprache)   Deutsch (C1)   Englisch (B1/B2) |
+|  **Kontakt** | cegledi.beata@gmail.com |
 
 ---
 
-## 🇬🇧 English
+##  English
 
 As a kid, I programmed on a Commodore in Basic and Pascal.
-20 years and 4 kids later, I'm making my dream come true: becoming a **Software Developer**! 🚀
+20 years and 4 kids later, I'm making my dream come true: becoming a **Software Developer**! 
 
 | | |
 |---|---|
-| 📚 **Learning now** | Python · SQL · Java · Swing GUI |
-| 💾 **Did before** | Pascal (Battleship game) · Excel Macro |
-| 🌍 **Languages** | 🇭🇺 Hungarian (native) · 🇩🇪 German (C1) · 🇬🇧 English (B1/B2) |
-| 📧 **Contact** | cegledi.beata@gmail.com |
+|  **Learning now** | Python  SQL  Java  Swing GUI |
+|  **Did before** | Pascal (Battleship game)  Excel Macro |
+|  **Languages** |  Hungarian (native)   German (C1)   English (B1/B2) |
+|  **Contact** | cegledi.beata@gmail.com |
 
 ---
 
-## 🇭🇺 Magyar
+##  Magyar
 
-Gyerekkoromban Commodore-n programoztam Basic és Pascal nyelven.
-20 év és 4 gyerek után most megvalósítom az álmomat: **Fachinformatikerin** leszek! 🚀
+Gyerekkoromban Commodore-n programoztam Basic s Pascal nyelven.
+20 v s 4 gyerek utn most megvalstom az lmomat: **Fachinformatikerin** leszek! 
 
 | | |
 |---|---|
-| 📚 **Most tanulom** | Python · SQL · Java · Swing GUI |
-| 💾 **Régen csináltam** | Pascal (Torpedo játék) · Excel Macro |
-| 🌍 **Nyelvek** | 🇭🇺 Magyar (anyanyelv) · 🇩🇪 Német (C1) · 🇬🇧 Angol (B1/B2) |
-| 📧 **Kapcsolat** | cegledi.beata@gmail.com |
+|  **Most tanulom** | Python  SQL  Java  Swing GUI |
+|  **Rgen csinltam** | Pascal (Torpedo jtk)  Excel Macro |
+|  **Nyelvek** |  Magyar (anyanyelv)   Nmet (C1)   Angol (B1/B2) |
+|  **Kapcsolat** | cegledi.beata@gmail.com |
 
 ---
 
-## 🗂️ Meine Projekte | My Projects
+##  Meine Projekte | My Projects
 
-### 🐍 Python
-
-| Projekt | Beschreibung |
-|---|---|
-| [🎬 Kino-Kassenautomat](https://github.com/BeataCegledi/Kino-Kassenautomat) | Ticketverkauf mit Rabatten, Altersregeln & Quittung |
-| [💳 Kreditrechner](https://github.com/BeataCegledi/Kreditrechner) | Kreditprüfung & Ratenplan-Berechnung |
-| [🧾 Quittung](https://github.com/BeataCegledi/Quittung) | Mini-Shop-Kasse mit Rabatt & formatierter Quittung |
-| [🐍 Einstieg-in-Python](https://github.com/BeataCegledi/Einstieg-in-Python) | Erste Python-Übungen mit Funktionen |
-| [🖥️ GuiSQLPython](https://github.com/BeataCegledi/GuiSQLPython) | Grafische Teilnehmerverwaltung mit tkinter & SQLite |
-
-### ☕ Java
+###  Python
 
 | Projekt | Beschreibung |
 |---|---|
-| [🎮 GameGUI-Java](https://github.com/BeataCegledi/GameGUI-Java) | 2D-Arcade-Shooter mit Swing, Gameloop & Kollisionserkennung |
-| [🧮 ATaschenrechner](https://github.com/BeataCegledi/ATaschenrechner) | Grafischer Taschenrechner mit Swing & Ereignissteuerung |
-| [📐 Java-Array-Matrix](https://github.com/BeataCegledi/Java-Array-Matrix) | Übungsaufgaben zu 2D-Arrays und Matrizenoperationen |
-| [🔧 Java-Methoden](https://github.com/BeataCegledi/Java-Methoden) | Methoden, Rückgabewerte und Parameter in Java |
+| [ Kino-Kassenautomat](https://github.com/BeataCegledi/Kino-Kassenautomat) | Ticketverkauf mit Rabatten, Altersregeln & Quittung |
+| [ Kreditrechner](https://github.com/BeataCegledi/Kreditrechner) | Kreditprfung & Ratenplan-Berechnung |
+| [ Quittung](https://github.com/BeataCegledi/Quittung) | Mini-Shop-Kasse mit Rabatt & formatierter Quittung |
+| [ Einstieg-in-Python](https://github.com/BeataCegledi/Einstieg-in-Python) | Erste Python-bungen mit Funktionen |
+| [ GuiSQLPython](https://github.com/BeataCegledi/GuiSQLPython) | Grafische Teilnehmerverwaltung mit tkinter & SQLite |
+
+###  Java
+
+| Projekt | Beschreibung |
+|---|---|
+| [ GameGUI-Java](https://github.com/BeataCegledi/GameGUI-Java) | 2D-Arcade-Shooter mit Swing, Gameloop & Kollisionserkennung |
+| [ ATaschenrechner](https://github.com/BeataCegledi/ATaschenrechner) | Grafischer Taschenrechner mit Swing & Ereignissteuerung |
+| [ Java-Array-Matrix](https://github.com/BeataCegledi/Java-Array-Matrix) | bungsaufgaben zu 2D-Arrays und Matrizenoperationen |
+| [ Java-Methoden](https://github.com/BeataCegledi/Java-Methoden) | Methoden, Rckgabewerte und Parameter in Java |
 
 ---
 
