@@ -436,6 +436,21 @@ public void run() {
 💡 `join()`: a hívó szál megvárja, amíg a másik szál befejeződik (`station.join();`).
 ---
 
+## `ConcurrentModificationException` és `CopyOnWriteArrayList`
+**Mit csinál:** `ConcurrentModificationException` akkor keletkezik, ha egy listát bejárás közben módosítanak (ugyanabból vagy egy másik szálból). A `CopyOnWriteArrayList` szálbiztos lista: minden módosításkor másolatot készít, így a bejárás mindig egy stabil változaton megy végig.
+**Példa:**
+```
+station-szál:  for (WetterChecker c : checkers) { …   ← épp bejárja
+EDT:                    checkers.remove(this);        ← közben töröl
+→ ConcurrentModificationException ❌
+```
+```java
+this.checkers = new ArrayList<>();             // ❌ nem szálbiztos
+this.checkers = new CopyOnWriteArrayList<>();  // ✅ import java.util.concurrent.CopyOnWriteArrayList;
+```
+Ideális, ha ritka a módosítás és gyakori a bejárás, mint egy Observer-listánál. Sok módosításnál lassú, mert minden alkalommal másol.
+---
+
 ## Szál neve: `super(name)` és `getName()`
 **Mit csinál:** Minden `Thread`-nek van neve. A konstruktorban adható át az ősosztálynak, és `getName()`-mel olvasható ki. A `Thread.getName()` **`final`**, ezért saját `name` mező + `getName()` fordítási hibát okoz.
 **Példa:**
@@ -910,6 +925,56 @@ A `serialVersionUID` azért kell, mert a `JFrame` szerializálható, és nélkü
 | `HIDE_ON_CLOSE` | csak elrejti (alapértelmezett) |
 | `DO_NOTHING_ON_CLOSE` | semmi |
 💡 `DISPOSE_ON_CLOSE` esetén a checkert le is kell iratkoztatni (`entfernen`), különben egy láthatatlan ablakot frissítene tovább.
+---
+
+## `DISPOSE_ON_CLOSE` + leiratkozás bezáráskor (`WindowListener`)
+**Mit csinál:** A `DISPOSE_ON_CLOSE` csak ezt az ablakot zárja be és szabadítja fel, a program fut tovább. Hogy a checker utána ne kapjon értesítést, az ablak bezárásakor le kell iratkoznia. Ezt egy `WindowListener` jelzi: a `windowClosed` **csak akkor** fut le, amikor az ablak bezárult, külön `if` nem kell.
+**Példa:**
+```java
+public class WarnungChecker extends JFrame implements WetterChecker {
+    private final WetterStation station;                 // ismernie kell, kiről iratkozik le
+
+    public WarnungChecker(WetterStation station) {
+        super("Wetterwarnung " + station.getName());    // a név is a stationből jön
+        this.station = station;
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent e) {
+                station.entfernen(WarnungChecker.this);           // "engem" iratkoztass le
+                if (station.getList().isEmpty()) station.interrupt(); // nincs több checker → ne mérjen
+            }
+        });
+        ...
+    }
+}
+// main:
+munich.hinzufuegen(new WarnungChecker(munich));
+```
+- **`WarnungChecker.this`**: a belső (névtelen) osztályban a sima `this` a listenerre mutatna. Így a külső objektumra, az ablakra hivatkozol.
+- A `WindowListener` maga is Observer: az ablak a Subject, a listener az Observer.
+- ⚠️ Az `entfernen` az EDT-n fut, a `bescheid` a station szálán → a stationben szálbiztos lista kell (`CopyOnWriteArrayList`, lásd a THREAD fejezetben).
+
+Importok: `java.awt.event.WindowAdapter`, `java.awt.event.WindowEvent`.
+---
+
+## `WindowAdapter`
+**Mit csinál:** Üres `WindowListener`-implementáció. Csak azt a metódust írod felül, amire szükséged van (a `WindowListener` interface-ben 7 metódus van).
+
+| Metódus | Mikor fut le |
+|---|---|
+| `windowClosing` | a felhasználó az X-re kattint (még a bezárás előtt) |
+| `windowClosed` | az ablak már bezárult (`dispose()` után) |
+| `windowOpened` | először jelenik meg |
+---
+
+## `Külső.this`
+**Mit csinál:** Belső vagy névtelen osztályból a külső osztály objektumára hivatkozik.
+**Példa:**
+```java
+station.entfernen(WarnungChecker.this);   // nem a listener, hanem az ablak
+```
 ---
 
 ## `setOpaque(true)`
